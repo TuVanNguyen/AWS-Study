@@ -22,6 +22,9 @@
 * determines the hardware hosting your ec2 instance
 
 
+## EC2 Image Builder
+
+
 ### References
 
 [Instance Types](https://aws.amazon.com/ec2/instance-types/)

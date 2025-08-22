@@ -71,3 +71,16 @@
 * receives traffic from client applications
 * pools and shares database connections to assist with application scalability and database efficiency
 * sends information from the client apps, to the RDS databases
+
+### Features
+* scales automatically 
+    * particularly useful for serverless apps that can be growing all the time
+* preserves app connections during failover
+    * by routing requests to standby after failover detected
+* deployable over multiple availability zones, protection from infrastructure failure
+* up to 66% faster failover times
+
+### Applications
+* unpredictable workloads
+* apps that open/close database connections infrequently
+* apps that have open but idle connections
