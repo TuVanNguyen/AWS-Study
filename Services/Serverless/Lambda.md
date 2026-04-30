@@ -62,7 +62,7 @@
 
 | Storage option | use case | size limit | dynamic updates | shared |
 |----------------|----------|------------|-----------------|--------|
-| /tmp | temporary data | 512 MB - 10 GB | dynamic read/write | within execution environment |
+| /tmp (in lambda)| temporary data | 512 MB - 10 GB | dynamic read/write | within execution environment |
 | lambda layer | libraries and SDKs | 50 MB zipped; 250 MB unzipped | updates requires new layer | shared across execution environments |
 | S3 | persistent static data | none | store and retrieval existing objects only; must upload new object to update | shared across execution environments |
 | EFS | persistent data | none | dynamic read/write | shared across execution environments, within VPC |

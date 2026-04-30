@@ -6,6 +6,7 @@
 
 ### Purpose
 * help analyze and debug distributed applications
+* good for troubleshooting connectivity issues
 
 ### X Ray Service Map
 * end-to-end view of requests as they travel through app
