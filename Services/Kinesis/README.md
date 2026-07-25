@@ -41,12 +41,14 @@
 ### What it does
 * ensure there's a record processor for every shard
 * manages number of record processors relative to the number of shards and consumers
+    * automatically detects when you reshard (increase number of shards)
 * if you have 2/+ consumers, it'll load balance and split the number of record processors on each consumer
 
 ### Best Practices
 * should ensure number of consumer instances doesn't exceed number of shards (except for failover or standby purposes)
     * one worker can process multiple shards
-    
+* use CPU utilization to drive the number of consumer instances you have
+    * use auto scaling group and base scaling decisions on CPU load on consumers
 
 ### Architecture
 ![alt text](.img/kinesis_data_analytics.png)
